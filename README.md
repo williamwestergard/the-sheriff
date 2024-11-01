@@ -1,7 +1,7 @@
 # the-sheriff
 
 
-Sheriffen kan möjligen vara något partisk i den dramatiska konflikten mellan katt och hundmänniskor. 
+Sheriffen kan möjligen vara något partisk i stadens konflikt emellan katt och hundmänniskor. 
 
 
 
