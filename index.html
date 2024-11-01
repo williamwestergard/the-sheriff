@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="main-container" id="main-background">
+        <img id="cowboy" src="img/cowboy.png" alt="cowboy" ; />
+
+        <img id="dog-and-cat" src="img/dog-and-cat.png" alt="A dog and a cat" ; />
+        <img id="puppy-and-kitten" src="img/puppies-and-kittens.png" alt="A dog and a cat" ; />
+
+        <img id="banana" src="img/banana.png" alt="banana" />
+        <img id="slingshot" src="img/slingshot.png" alt="slingshot" />
+        <img id="bazooka" src="img/bazooka.png" alt="bazooka" />
+
+        <section class="main-text">
+          <section class="intro">
+            <h3>javascript</h3>
+            <h2>The <br />sheriff</h2>
+            <br />
+            <article id="message">
+              <br>
+              <strong>Howdy stranger.</strong>
+              <br />
+              I haven't seen you around these parts before.
+            </article>
+            <button type="button" onclick="nextClicked()" id="nextButton">
+              Next
+            </button>
+          </section>
+
+          <section id="name-input">
+            <p>First of all, <br>
+            What's your name?</p>
+            <article class="button-field">
+              <input type="text" id="name-inputField"  maxlength="12"/>
+              <button id="nameButton" onclick="nameInput()">Next</button>
+            </article>
+          </section>
+
+          <section id="dogs-cats">
+            <br />
+            <article id="name-declared"></article>
+            <p>Tell me, what do you like the most?</p>
+            <button id="dogs" onclick="question2();dogClicked()">Dogs</button>
+            <button id="cats" onclick="question2();catClicked()">Cats</button>
+          </section>
+
+          <section id="puppies-kittens">
+            <br /><br />
+            <p>And which of these do you like the most?</p>
+            <button id="puppies" onclick="questionResults();dogClicked()">Puppies</button>
+            <button id="kittens" onclick="questionResults();catClicked()">Kittens</button>
+          </section>
+
+          <section id="results">
+            <article id="results-message">
+              Got it.
+              <br />
+              That's good to know.
+            </article>
+
+            <button
+              type="button"
+              onclick="resultsButtonClicked()"
+              id="resultsButton"
+            >
+              Next
+            </button>
+          </section>
+          
+        </section>
+        <section id="discord">
+          <img id="dog-vs-cat" src="img/dog-vs-cat.png">
+        </section>
+      </section>
+    </main>
+    <script src="javascript.js"></script>
+  </body>
+</html>

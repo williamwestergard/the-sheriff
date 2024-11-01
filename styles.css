@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --main-color: #c14929;
+  --secondary-color: #d0c2b5;
+  --third-color: #331711;
+}
+
+body {
+  background-color: #c14929;
+  background:repeating-linear-gradient(249deg, #C14929 0,#C14929 20%, #C65636 0,#C65636 25%) 0 / 25px 20px;
+  margin: auto;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+
+.main-container {
+  background-color: #d0c2b5;
+  border: 2px solid black;
+  box-shadow: 7px 7px 0 black;
+  border-radius: 15px;
+  padding: 10px;
+  width: 900px;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.main-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 2.2rem;
+  line-height: 37px;
+  padding: 60px;
+}
+
+.intro h2 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 50px;
+  position: absolute;
+  top: 120px;
+}
+.intro h3 {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 800;
+  line-height: 50px;
+  position: absolute;
+  top: 8px;
+  right: 25px;
+}
+
+#cowboy, #banana, #bazooka, #slingshot, #dog-and-cat, #puppy-and-kitten {
+  background-color: #89adb5;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-left: 20px;
+  padding: 20px;
+  width: auto;
+  height: 70%;
+  align-self: center;
+}
+
+#nextButton,
+#resultsButton {
+  background: none;
+  background-color: var(--main-color);
+  border: 3px solid black;
+  color: black;
+  box-shadow: 5px 5px 0 black;
+  bottom: 50px;
+  right: 50px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  position: absolute;
+  padding: 15px 65px 15px 65px;
+  border-radius: 15px;
+}
+#nextButton:hover,
+#resultsButton:hover {
+  background: none;
+  background-color: none;
+  border: 3px solid black;
+  color: black;
+  box-shadow: none;
+  transition: 0.2s;
+}
+
+#nameButton {
+  background: none;
+  background-color: var(--main-color);
+  border: 3px solid black;
+  color: black;
+  box-shadow: 5px 5px 0 black;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 15px 65px 15px 65px;
+  border-radius: 15px;
+}
+
+#nameButton:hover {
+  background: none;
+  background-color: none;
+  border: 3px solid black;
+  color: black;
+  box-shadow: none;
+  transition: 0.2s;
+}
+
+#name-input,
+#dogs-cats,
+#puppies-kittens,
+#results,
+#discord,
+#banana,
+#bazooka,
+#slingshot,
+#dog-and-cat, 
+#puppy-and-kitten,
+#dog-vs-cat {
+  display: none;
+}
+
+.button-field {
+  position: relative;
+  top: 20px;
+}
+
+#name-inputField {
+  background: none;
+  width: 200px;
+  position: relative;
+  top:5px;
+  border: 3px solid black;
+  color: black;
+  box-shadow: 5px 5px 0 black;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 5px 15px 5px 15px;
+  border-radius: 15px;
+}
+
+#nameButton {
+  top:5px;
+  position: relative;
+  padding: 5px 15px 5px 15px;
+}
+
+#dogs,
+#cats,
+#puppies,
+#kittens {
+  position: relative;
+  bottom: 0;
+  right: 0;
+  top: 50px;
+  background: none;
+  background-color: var(--main-color);
+  border: 3px solid black;
+  color: black;
+  box-shadow: 5px 5px 0 black;
+  margin-right:9px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 15px 25px 15px 25px;
+  border-radius: 15px;
+}
+
+#dogs:hover,
+#cats:hover,
+#puppies:hover,
+#kittens:hover {
+  background: none;
+  background-color: none;
+  border: 3px solid black;
+  color: black;
+  box-shadow: none;
+  transition: 0.2s;
+}
+
+#dog-vs-cat {
+  display:none;
+  position: absolute;
+  bottom:-15px;
+  right:40px;
+  width: auto;
+  height: 25%;
+  align-self: center;
+}
