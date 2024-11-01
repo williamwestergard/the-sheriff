@@ -17,7 +17,7 @@ function nextClicked() {
   document.getElementById("message").innerHTML = message;
 }
 
-let nameResult = namePlayer;
+let nameResult = namePlayer
 function nameInput() {
   document.getElementById("name-input").style.display = "none";
   document.getElementById("dogs-cats").style.display = "block";
@@ -26,6 +26,7 @@ function nameInput() {
   document.getElementById("name-declared").innerHTML =
     "Welcome " + namePlayer.value + ".";
 }
+
 
 let dogs = 0;
 let cats = 0;
@@ -86,7 +87,7 @@ function resultsButtonClicked() {
       }
   } else if (resultsButton == 4) {
     message =
-      "Stay out of trouble now yah hear?";
+      "Have a good day " + namePlayer.value;
     document.getElementById("resultsButton").style.display = "none";
     document.getElementById("cowboy").style.display = "none";
     document.getElementById("discord").style.display = "block";
