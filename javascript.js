@@ -27,7 +27,6 @@ function nameInput() {
     "Welcome " + namePlayer.value + ".";
 }
 
-
 let dogs = 0;
 let cats = 0;
 
@@ -87,7 +86,7 @@ function resultsButtonClicked() {
       }
   } else if (resultsButton == 4) {
     message =
-      "Have a good day " + namePlayer.value;
+      "Stay out of trouble now " + namePlayer.value + ".";
     document.getElementById("resultsButton").style.display = "none";
     document.getElementById("cowboy").style.display = "none";
     document.getElementById("discord").style.display = "block";
