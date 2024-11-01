@@ -9,7 +9,7 @@ function nextClicked() {
   } else if (nextButton == 2) {
     message = "Oh, you don't?";
   } else if (nextButton == 3) {
-    message = "Well I hope you don't mind if I ask you a few questions.";
+    message = "Well then, I hope you don't mind if I ask you a few questions.";
   } else if (nextButton == 4) {
     document.getElementById("nextButton").style.display = "none";
     document.getElementById("name-input").style.display = "block";
