@@ -17,15 +17,24 @@ function nextClicked() {
   document.getElementById("message").innerHTML = message;
 }
 
-let nameResult = namePlayer
+let nameResult = namePlayer;
 function nameInput() {
+  console.log(namePlayer.value);
   document.getElementById("name-input").style.display = "none";
   document.getElementById("dogs-cats").style.display = "block";
   document.getElementById("cowboy").style.display = "none";
   document.getElementById("dog-and-cat").style.display = "block";
-  document.getElementById("name-declared").innerHTML =
+  if (namePlayer.value == "") {
+    document.getElementById("name-declared").innerHTML =
+    "Welcome Billy.";
+
+  }
+  else {
+    document.getElementById("name-declared").innerHTML =
     "Welcome " + namePlayer.value + ".";
+  }
 }
+
 
 let dogs = 0;
 let cats = 0;
@@ -85,13 +94,22 @@ function resultsButtonClicked() {
         document.getElementById("slingshot").style.display = "none";
       }
   } else if (resultsButton == 4) {
+    if (namePlayer.value == "") {
+      message =
+      "Stay out of trouble now Billy.";
+      document.getElementById("resultsButton").style.display = "none";
+      document.getElementById("cowboy").style.display = "none";
+      document.getElementById("discord").style.display = "block";
+      document.getElementById("dog-vs-cat").style.display = "block";
+    }
+    else {
     message =
       "Stay out of trouble now " + namePlayer.value + ".";
     document.getElementById("resultsButton").style.display = "none";
     document.getElementById("cowboy").style.display = "none";
     document.getElementById("discord").style.display = "block";
     document.getElementById("dog-vs-cat").style.display = "block";
-
+  }
   }
   document.getElementById("results-message").innerHTML = message;
 }
