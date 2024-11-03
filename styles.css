@@ -284,15 +284,16 @@ main {
   position: absolute;
   padding: 15px 65px 15px 65px;
   border-radius: 15px;
+  transition: 0s;
 }
-#nextButton:hover,
-#resultsButton:hover {
+#nextButton:active,
+#resultsButton:active {
   background: none;
   background-color: none;
   border: 3px solid black;
   color: black;
   box-shadow: none;
-  transition: 0.2s;
+  transition: 0s;
 }
 
 #name-input {
